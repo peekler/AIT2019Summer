@@ -3,27 +3,20 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/layoutMain"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".MainActivity">
 
-    <!-- my comment -->
+    <hu.ait.tictactoe.ui.TicTacToeView
+            android:id="@+id/ticTacToeView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
 
     <Button
-            android:id="@+id/btnTime"
+            android:id="@+id/btnClear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btn_time"/>
-
-    <TextView
-            android:id="@+id/tvTime"
-            android:textSize="24sp"
-            android:textColor="#FF0000"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-    />
+            android:text="Clear"/>
 
 </LinearLayout>

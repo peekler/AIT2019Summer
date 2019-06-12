@@ -2,6 +2,8 @@ package hu.ait.timeshowdemo
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.design.widget.Snackbar
+import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
@@ -17,11 +19,23 @@ class MainActivity : AppCompatActivity() {
 
             var currentTime = Date(System.currentTimeMillis()).toString()
 
-            Toast.makeText(
+/*            Toast.makeText(
                 this@MainActivity,
                 currentTime,
                 Toast.LENGTH_LONG
-            ).show()
+            ).show()*/
+
+
+            Snackbar.make(
+                layoutMain,
+                currentTime,
+                Snackbar.LENGTH_LONG).setAction("Ok",
+                    object: View.OnClickListener {
+                        override fun onClick(v: View?) {
+                            tvTime.text = "SNACK OK"
+                        }
+                    }
+                ).show()
 
             tvTime.text = currentTime
 

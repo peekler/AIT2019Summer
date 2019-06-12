@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SimpleCalculator</string>
+    <string name="error_number">This field can not be empty</string>
+
+    <string name="plus_result">%1$d plus %2$d is: %3$d</string>
+
+</resources>
