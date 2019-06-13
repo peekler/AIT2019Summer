@@ -11,7 +11,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnClear.setOnClickListener {
-            ticTacToeView.clearCircles()
+            ticTacToeView.resetGame()
         }
     }
+
+    fun showText(text: String){
+        tvStatus.text = text
+    }
+
 }
