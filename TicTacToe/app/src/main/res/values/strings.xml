@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TicTacToe</string>
+    <string name="owins">O is the next player</string>
 </resources>

@@ -6,16 +6,22 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
 import hu.ait.tictactoe.MainActivity
-import hu.ait.tictactoe.R
 import hu.ait.tictactoe.model.TicTacToeModel
+import android.graphics.PointF
+import hu.ait.tictactoe.R
+
 
 class TicTacToeView(context: Context?, attrs: AttributeSet?) : View(context, attrs) {
 
     var paintBackGround : Paint? = null
     var paintLine : Paint? = null
+    var paintText : Paint? = null
+
+
+    private var tmpPlayer: PointF? = null
 
     var bitmapBg = BitmapFactory.decodeResource(
-        resources, R.drawable.grass
+        resources, hu.ait.tictactoe.R.drawable.grass
     )
 
     init {
@@ -27,12 +33,18 @@ class TicTacToeView(context: Context?, attrs: AttributeSet?) : View(context, att
         paintLine?.color = Color.WHITE
         paintLine?.style = Paint.Style.STROKE
         paintLine?.strokeWidth = 5f
+
+        paintText = Paint()
+        paintText?.textSize = 50f
+        paintText?.color = Color.GREEN
     }
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         super.onSizeChanged(w, h, oldw, oldh)
 
         bitmapBg = Bitmap.createScaledBitmap(bitmapBg, width/3, height/3, false)
+
+        paintText?.textSize = height.toFloat() / 3
     }
 
     override fun onDraw(canvas: Canvas?) {
@@ -48,7 +60,12 @@ class TicTacToeView(context: Context?, attrs: AttributeSet?) : View(context, att
 
         drawGrid(canvas)
 
+        canvas?.drawText("5", 0f, height.toFloat()/3, paintText!!)
+
+
         drawPlayers(canvas)
+
+        drawTmpPlayer(canvas)
     }
 
     private fun drawGrid(canvas: Canvas?) {
@@ -94,30 +111,60 @@ class TicTacToeView(context: Context?, attrs: AttributeSet?) : View(context, att
         }
     }
 
+    private fun drawTmpPlayer(canvas: Canvas?) {
+        if (tmpPlayer != null) {
+            if (TicTacToeModel.nextPlayer === TicTacToeModel.CIRCLE) {
+                canvas?.drawCircle(
+                    tmpPlayer!!.x, tmpPlayer!!.y, height.toFloat() / 6 - 2,
+                    paintLine
+                )
+            } else {
+                canvas?.drawLine(
+                    tmpPlayer!!.x - width / 6,
+                    tmpPlayer!!.y - height / 6,
+                    tmpPlayer!!.x + width / 6,
+                    tmpPlayer!!.y + height / 6, paintLine
+                )
 
+                canvas?.drawLine(
+                    tmpPlayer!!.x - width / 6,
+                    tmpPlayer!!.y + height / 6,
+                    tmpPlayer!!.x + width / 6,
+                    tmpPlayer!!.y - height / 6, paintLine
+                )
+            }
+        }
+    }
 
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
-        val tX = event.x.toInt() / (width / 3)
-        val tY = event.y.toInt() / (height / 3)
 
-        if (tX<3 && tY<3 && TicTacToeModel.getFieldContent(tX, tY)==TicTacToeModel.EMPTY) {
-            TicTacToeModel.setFieldContent(tX, tY, TicTacToeModel.nextPlayer)
-            TicTacToeModel.changeNextPlayer()
-
-            var nextText = if (TicTacToeModel.nextPlayer == TicTacToeModel.CIRCLE) {
-                "O is the next player"
-            } else {
-                "X is the next player"
-            }
-
-            (context as MainActivity).showText(nextText)
-
-
+        if (event.action == MotionEvent.ACTION_MOVE) {
+            tmpPlayer = PointF(event.x, event.y)
             invalidate()
+        } else if (event.action == MotionEvent.ACTION_UP) {
+            tmpPlayer = null
+
+            val tX = event.x.toInt() / (width / 3)
+            val tY = event.y.toInt() / (height / 3)
+
+            if (tX < 3 && tY < 3 && TicTacToeModel.getFieldContent(tX, tY) == TicTacToeModel.EMPTY) {
+                TicTacToeModel.setFieldContent(tX, tY, TicTacToeModel.nextPlayer)
+                TicTacToeModel.changeNextPlayer()
+
+                var nextText = if (TicTacToeModel.nextPlayer == TicTacToeModel.CIRCLE) {
+                    context.getString(R.string.owins)
+                } else {
+                    "X is the next player"
+                }
+
+                (context as MainActivity).showText(nextText)
+
+                invalidate()
+            }
         }
 
-        return super.onTouchEvent(event)
+        return true
     }
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
