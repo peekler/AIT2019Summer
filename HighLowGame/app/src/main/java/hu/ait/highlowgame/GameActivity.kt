@@ -34,6 +34,8 @@ class GameActivity : AppCompatActivity() {
                     )
                     startActivity(intentWin)
 
+                    finish()
+
                 } else if (myNum < generatedNum) {
                     tvStatus.text = "The generated number is larger"
                 } else if (myNum > generatedNum) {

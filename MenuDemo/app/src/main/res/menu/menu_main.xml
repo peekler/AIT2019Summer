@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:title="Show main"
+            android:id="@+id/action_main"
+            android:icon="@drawable/ic_settings_phone"
+            app:showAsAction="always|withText"/>
+
+    <item
+        android:title="Details"
+        android:id="@+id/action_details"/>
+
+    <item
+        android:title="Help"
+        android:id="@+id/action_help"/>
+
+</menu>
