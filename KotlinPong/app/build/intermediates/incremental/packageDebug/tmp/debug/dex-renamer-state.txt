@@ -1,0 +1,4 @@
+#Thu Jun 20 09:38:40 CEST 2019
+base.0=/Users/eklerpeter/Development/VC/AIT2019Summer/07/KotlinPong/app/build/intermediates/dex/debug/mergeDexDebug/out
+path.0=classes.dex
+renamed.0=classes.dex
