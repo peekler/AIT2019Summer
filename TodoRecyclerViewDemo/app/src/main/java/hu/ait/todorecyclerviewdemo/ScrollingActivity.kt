@@ -18,6 +18,11 @@ import kotlinx.android.synthetic.main.activity_scrolling.*
 class ScrollingActivity : AppCompatActivity(),
     TodoDialog.TodoHandler {
 
+    companion object {
+        public val KEY_TODO_EDIT = "KEY_TODO_EDIT"
+    }
+
+
     lateinit var todoAdapter: TodoAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,17 +64,42 @@ class ScrollingActivity : AppCompatActivity(),
 
     }
 
+    var editIndex : Int = -1
 
+    public fun showEditTodoDialog(todoToEdit: Todo, todoIndex: Int) {
+        editIndex = todoIndex
+
+        val editTodoDialog = TodoDialog()
+
+        val bundle = Bundle()
+        bundle.putSerializable(KEY_TODO_EDIT, todoToEdit)
+        editTodoDialog.arguments = bundle
+
+        editTodoDialog.show(supportFragmentManager, "EDITDIALOG")
+    }
 
 
     override fun todoCreated(todo: Todo) {
         Thread{
-            AppDatabase.getInstance(this@ScrollingActivity).
+            var newId = AppDatabase.getInstance(this@ScrollingActivity).
                 todoDao().insertTodo(todo)
+            todo.id = newId
 
             runOnUiThread {
                 todoAdapter.addTodo(todo)
             }
+        }.start()
+    }
+
+    override fun todoUpdated(todo: Todo) {
+        Thread {
+            AppDatabase.getInstance(this@ScrollingActivity).
+                todoDao().updateTodo(todo)
+
+            runOnUiThread {
+                todoAdapter.updateTodo(todo, editIndex)
+            }
+
         }.start()
     }
 }

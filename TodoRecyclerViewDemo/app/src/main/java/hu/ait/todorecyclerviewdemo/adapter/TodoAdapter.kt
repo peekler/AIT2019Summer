@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import hu.ait.todorecyclerviewdemo.R
+import hu.ait.todorecyclerviewdemo.ScrollingActivity
+import hu.ait.todorecyclerviewdemo.data.AppDatabase
 import hu.ait.todorecyclerviewdemo.data.Todo
 import hu.ait.todorecyclerviewdemo.touch.TodoTouchHelperCallback
 import kotlinx.android.synthetic.main.todo_row.view.*
@@ -42,8 +44,24 @@ class TodoAdapter : RecyclerView.Adapter<TodoAdapter.ViewHolder>,
         holder.cbDone.isChecked = todo.done
         holder.tvDate.text = todo.createDate
 
+
+
         holder.btnDelete.setOnClickListener {
             removeTodo(holder.adapterPosition)
+        }
+
+        holder.btnEdit.setOnClickListener {
+            (context as ScrollingActivity).showEditTodoDialog(
+                todo, holder.adapterPosition
+            )
+        }
+
+        holder.cbDone.setOnClickListener {
+            todo.done = holder.cbDone.isChecked
+
+            Thread{
+                AppDatabase.getInstance(context).todoDao().updateTodo(todo)
+            }.start()
         }
     }
 
@@ -51,6 +69,7 @@ class TodoAdapter : RecyclerView.Adapter<TodoAdapter.ViewHolder>,
         val cbDone = itemView.cbDone
         val tvDate = itemView.tvDate
         val btnDelete = itemView.btnDelete
+        val btnEdit = itemView.btnEdit
     }
 
     fun addTodo(todo: Todo){
@@ -61,10 +80,22 @@ class TodoAdapter : RecyclerView.Adapter<TodoAdapter.ViewHolder>,
     }
 
     fun removeTodo(index: Int) {
-        todoItems.removeAt(index)
-        notifyItemRemoved(index)
+        var t = Thread {
+            AppDatabase.getInstance(context).todoDao().deleteTodo(todoItems.get(index))
+
+            (context as ScrollingActivity).runOnUiThread {
+                todoItems.removeAt(index)
+                notifyItemRemoved(index)
+            }
+        }
+
+        t.start()
     }
 
+    fun updateTodo(todo: Todo, index: Int){
+        todoItems.set(index, todo)
+        notifyItemChanged(index)
+    }
 
     override fun onDismissed(position: Int) {
         removeTodo(position)

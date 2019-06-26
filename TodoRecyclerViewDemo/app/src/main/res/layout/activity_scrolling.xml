@@ -41,7 +41,6 @@
 
 
 
-
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerTodo"
             android:layout_width="match_parent"
