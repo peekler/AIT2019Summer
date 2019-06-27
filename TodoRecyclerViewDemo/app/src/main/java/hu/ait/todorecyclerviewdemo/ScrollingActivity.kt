@@ -1,5 +1,6 @@
 package hu.ait.todorecyclerviewdemo
 
+import android.content.Context
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,7 @@ import hu.ait.todorecyclerviewdemo.data.AppDatabase
 import hu.ait.todorecyclerviewdemo.data.Todo
 import hu.ait.todorecyclerviewdemo.touch.TodoReyclerTouchCallback
 import kotlinx.android.synthetic.main.activity_scrolling.*
+import uk.co.samuelwall.materialtaptargetprompt.MaterialTapTargetPrompt
 
 class ScrollingActivity : AppCompatActivity(),
     TodoDialog.TodoHandler {
@@ -36,6 +38,28 @@ class ScrollingActivity : AppCompatActivity(),
         }
 
         initRecyclerView()
+
+        if (!getWasStarted()) {
+            MaterialTapTargetPrompt.Builder(this)
+                .setTarget(R.id.fab)
+                .setPrimaryText("Create Todo")
+                .setSecondaryText("Click here to create a new Todo object")
+                .show()
+
+            saveWasStarted()
+        }
+    }
+
+    fun saveWasStarted() {
+        var sharedPref = getSharedPreferences("NAME_PREF", Context.MODE_PRIVATE)
+        var editor = sharedPref.edit()
+        editor.putBoolean("KEY_STARTED", true)
+        editor.apply()
+    }
+
+    fun getWasStarted() : Boolean {
+        var sharedPref = getSharedPreferences("NAME_PREF", Context.MODE_PRIVATE)
+        return sharedPref.getBoolean("KEY_STARTED", false)
     }
 
     fun initRecyclerView() {

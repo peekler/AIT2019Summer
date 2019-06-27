@@ -4,8 +4,10 @@ import android.app.AlertDialog
 import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.CheckBox
 import android.widget.EditText
+import android.widget.Spinner
 import androidx.fragment.app.DialogFragment
 import hu.ait.todorecyclerviewdemo.data.Todo
 import kotlinx.android.synthetic.main.todo_dialog.view.*
@@ -36,6 +38,7 @@ class TodoDialog : DialogFragment() {
 
     lateinit var etTodoText: EditText
     lateinit var cbTodoDone: CheckBox
+    lateinit var spinnerCategory: Spinner
 
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
@@ -48,6 +51,19 @@ class TodoDialog : DialogFragment() {
 
         etTodoText = dialogView.etTodoText
         cbTodoDone = dialogView.cbTodoDone
+        spinnerCategory = dialogView.spinnerCategory
+
+        val categoryAdapter = ArrayAdapter.createFromResource(
+            activity as Context,
+            R.array.category_array,
+            android.R.layout.simple_spinner_item
+        )
+        categoryAdapter.setDropDownViewResource(
+            android.R.layout.simple_dropdown_item_1line
+        )
+        spinnerCategory.adapter = categoryAdapter
+
+
 
         dialogBuilder.setView(dialogView)
 

@@ -1,0 +1,158 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:2:1-23:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/98b912734dcf3341155048cb111da962/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/4586aab67b0d6ab9a7da0f95c8fb8c9d/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/edf68d970d5192665634b35d9d2f0d4f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/942370257fc2ca314601cc6fca6770e3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/dd05bca1aeb6a8937a5904f1d0da3a6e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/39b8ce4c84bc249b0e1e9ba000904f05/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/e8673e4be5ed3fb073fe16fa75ce8306/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/e394297357300779a89be22023a7b28b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/73942116079b7386397cbb12452c7bc0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/d0e675198f059f6106a57f0f81273dbb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/db11727f5fde377ca4724f07e7a4336d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/dbf36fd81a9e455ec12904c42ebf816e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/75876ef903886ded733618ca2bc27a25/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/02722583f6eaa9f15250f9be5561461f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/c29c8fa95913effdc78d22fed458035f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/b74db86c2df35cc184ac73fa36999813/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/f2d55bb29712e4c0ccecb7ffc0a3e181/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/78bb24fe2c784dc0942f2a2d58ff81d0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/dacc7d6585aa9e4db2f3a20492e12997/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/d16151c548ead3db3bf19ce4ed34664a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/64d792b064dda443f8002f805f13d148/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/a137b6a9adacd26748c27e769a28c8a7/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/4d3940940bb57a0bef4ad7a7e23e9c65/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/46fda4bd846838d353ab22995e621d05/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/9787a7b8a23bc6a428300c9ae874e126/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/e589a09bd5109e0f852dca18ef820216/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/6e090a2a54ca83a633993f60ae0edc37/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:2:1-23:12
+	package
+		ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:3:5-47
+		INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml
+		ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:2:1-23:12
+		INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml
+		ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:2:1-23:12
+		INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:5:5-21:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/4586aab67b0d6ab9a7da0f95c8fb8c9d/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/4586aab67b0d6ab9a7da0f95c8fb8c9d/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/b74db86c2df35cc184ac73fa36999813/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/b74db86c2df35cc184ac73fa36999813/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/f2d55bb29712e4c0ccecb7ffc0a3e181/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/f2d55bb29712e4c0ccecb7ffc0a3e181/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/b74db86c2df35cc184ac73fa36999813/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:11:9-40
+activity#hu.aut.android.prefframeworkdemo.MainActivity
+ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:16:27-74
+activity#hu.aut.android.prefframeworkdemo.MySettings
+ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:20:9-47
+	android:name
+		ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml:20:19-45
+uses-sdk
+INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml
+INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/98b912734dcf3341155048cb111da962/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/98b912734dcf3341155048cb111da962/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/4586aab67b0d6ab9a7da0f95c8fb8c9d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/4586aab67b0d6ab9a7da0f95c8fb8c9d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/edf68d970d5192665634b35d9d2f0d4f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/edf68d970d5192665634b35d9d2f0d4f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/942370257fc2ca314601cc6fca6770e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/942370257fc2ca314601cc6fca6770e3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/dd05bca1aeb6a8937a5904f1d0da3a6e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/dd05bca1aeb6a8937a5904f1d0da3a6e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/39b8ce4c84bc249b0e1e9ba000904f05/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/39b8ce4c84bc249b0e1e9ba000904f05/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/e8673e4be5ed3fb073fe16fa75ce8306/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/e8673e4be5ed3fb073fe16fa75ce8306/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/e394297357300779a89be22023a7b28b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/e394297357300779a89be22023a7b28b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/73942116079b7386397cbb12452c7bc0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/73942116079b7386397cbb12452c7bc0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/d0e675198f059f6106a57f0f81273dbb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/d0e675198f059f6106a57f0f81273dbb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/db11727f5fde377ca4724f07e7a4336d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/db11727f5fde377ca4724f07e7a4336d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/dbf36fd81a9e455ec12904c42ebf816e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/dbf36fd81a9e455ec12904c42ebf816e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/75876ef903886ded733618ca2bc27a25/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/75876ef903886ded733618ca2bc27a25/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/02722583f6eaa9f15250f9be5561461f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/02722583f6eaa9f15250f9be5561461f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/c29c8fa95913effdc78d22fed458035f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/c29c8fa95913effdc78d22fed458035f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/b74db86c2df35cc184ac73fa36999813/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/b74db86c2df35cc184ac73fa36999813/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/f2d55bb29712e4c0ccecb7ffc0a3e181/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/f2d55bb29712e4c0ccecb7ffc0a3e181/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/78bb24fe2c784dc0942f2a2d58ff81d0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/78bb24fe2c784dc0942f2a2d58ff81d0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/dacc7d6585aa9e4db2f3a20492e12997/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/dacc7d6585aa9e4db2f3a20492e12997/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/d16151c548ead3db3bf19ce4ed34664a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/d16151c548ead3db3bf19ce4ed34664a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/64d792b064dda443f8002f805f13d148/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/64d792b064dda443f8002f805f13d148/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/a137b6a9adacd26748c27e769a28c8a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/a137b6a9adacd26748c27e769a28c8a7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/4d3940940bb57a0bef4ad7a7e23e9c65/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/4d3940940bb57a0bef4ad7a7e23e9c65/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/46fda4bd846838d353ab22995e621d05/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/46fda4bd846838d353ab22995e621d05/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/9787a7b8a23bc6a428300c9ae874e126/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/9787a7b8a23bc6a428300c9ae874e126/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/e589a09bd5109e0f852dca18ef820216/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/e589a09bd5109e0f852dca18ef820216/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/6e090a2a54ca83a633993f60ae0edc37/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/eklerpeter/.gradle/caches/transforms-2/files-2.1/6e090a2a54ca83a633993f60ae0edc37/AndroidManifest.xml:20:5-44
+INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml
+INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml
+		ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml
+		ADDED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/eklerpeter/Development/VC/AIT2019Summer/PreferenceFrameworkDemo/app/src/main/AndroidManifest.xml
