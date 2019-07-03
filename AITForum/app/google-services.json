@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "310673524402",
+    "firebase_url": "https://aitforumsummer.firebaseio.com",
+    "project_id": "aitforumsummer",
+    "storage_bucket": "aitforumsummer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310673524402:android:73dc6c0dfd8dc8db",
+        "android_client_info": {
+          "package_name": "hu.ait.aitforum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310673524402-iuk8o2244qpot99tav0700e3f9p799li.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hu.ait.aitforum",
+            "certificate_hash": "8b1ea5c1455068433f66f2bfbd79de35cdd71375"
+          }
+        },
+        {
+          "client_id": "310673524402-g0l3qr8lgo402338o26vq7mnfu9s54u0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMiTK9qii01QURvxhHTPXC6qc9Ho3uXFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310673524402-g0l3qr8lgo402338o26vq7mnfu9s54u0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
