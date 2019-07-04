@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.google.firebase.firestore.FirebaseFirestore
 import hu.ait.aitforum.R
 import hu.ait.aitforum.data.Post
 import kotlinx.android.synthetic.main.post_row.view.*
@@ -12,12 +14,14 @@ import kotlinx.android.synthetic.main.post_row.view.*
 class PostsAdapter : RecyclerView.Adapter<PostsAdapter.ViewHolder> {
 
     lateinit var context: Context
-    var  postsList = mutableListOf<Post>(
-        Post("1", "Demo", "title", "body")
-    )
+    var  postsList = mutableListOf<Post>()
+    var  postKeys = mutableListOf<String>()
 
-    constructor(context: Context) : super() {
+    lateinit var currentUid: String
+
+    constructor(context: Context, uid: String) : super() {
         this.context = context
+        this.currentUid = uid
     }
 
 
@@ -39,11 +43,59 @@ class PostsAdapter : RecyclerView.Adapter<PostsAdapter.ViewHolder> {
         holder.tvAuthor.text = post.author
         holder.tvTitle.text = post.title
         holder.tvBody.text = post.body
+
+        if (currentUid == post.uid) {
+            holder.btnDelete.visibility = View.VISIBLE
+        } else {
+            holder.btnDelete.visibility = View.GONE
+        }
+
+        holder.btnDelete.setOnClickListener {
+            removePost(holder.adapterPosition)
+        }
+
+        if (post.imageUrl.isEmpty()) {
+            holder.ivPostImage.visibility = View.GONE
+        } else {
+            Glide.with(context).load(
+                post.imageUrl).into(holder.ivPostImage)
+
+            holder.ivPostImage.visibility = View.VISIBLE
+        }
     }
+
+    fun addPost(post: Post, key: String) {
+        postsList.add(post)
+        postKeys.add(key)
+        notifyDataSetChanged()
+    }
+
+    private fun removePost(index: Int) {
+        FirebaseFirestore.getInstance().collection("posts").document(
+            postKeys[index]
+        ).delete()
+
+        postsList.removeAt(index)
+        postKeys.removeAt(index)
+        notifyItemRemoved(index)
+    }
+
+
+    fun removePostByKey(key: String) {
+        val index = postKeys.indexOf(key)
+        if (index != -1) {
+            postsList.removeAt(index)
+            postKeys.removeAt(index)
+            notifyItemRemoved(index)
+        }
+    }
+
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         var tvAuthor = itemView.tvAuthor
         var tvTitle = itemView.tvTitle
         var tvBody = itemView.tvBody
+        var btnDelete = itemView.btnDelete
+        var ivPostImage = itemView.ivPostImage
     }
 }

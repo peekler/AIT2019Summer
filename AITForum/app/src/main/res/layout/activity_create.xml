@@ -27,6 +27,18 @@
             android:maxLines="10"
             android:scrollHorizontally="false" />
 
+    <ImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"/>
+
+    <Button
+            android:id="@+id/btnAttach"
+            android:text="Attach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
     <Button
             android:id="@+id/btnSend"
             android:layout_width="wrap_content"
